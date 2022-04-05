@@ -25,11 +25,11 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 // pages
-import Index from "views/Index.js";
+import Index from "pages/LandingPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import Sections from "views/Sections.js";
 import Presentation from "views/Presentation.js";
-import AboutUs from "views/examples/AboutUs.js";
+import AboutUs from "pages/AboutUs.js";
 import AddProduct from "views/examples/AddProduct.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
@@ -101,7 +101,7 @@ ReactDOM.render(
         path="/twitter-redesign"
         render={(props) => <TwitterRedesign {...props} />}
       />
-      <Redirect to="/presentation" />
+      <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
