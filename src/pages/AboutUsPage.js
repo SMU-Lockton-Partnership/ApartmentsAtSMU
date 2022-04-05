@@ -58,7 +58,7 @@ function AboutUs() {
               service with robust ideas. Dynamically innovate resource-leveling
               customer service for state of the art customer service.
             </p>
-            <h2 className="text-center creators">Creators</h2>
+            <h2 className="text-center creators" id="Contact">Creators</h2>
             <Row>
               <Col md="3">
                 <Card className="card-profile card-plain">

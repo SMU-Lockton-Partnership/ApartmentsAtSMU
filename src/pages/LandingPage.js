@@ -36,7 +36,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title" id="LearnMore">Let's talk product</h2>
                 <h5>
                   This is the paragraph where you can write more details about
                   your product. Keep you user engaged by providing meaningful
@@ -172,7 +172,7 @@ function LandingPage() {
                   href="/about-us"
                 >
                   <i className="fa fa-newspaper-o mr-1" />
-                  Learn More
+                  More About the Team
                 </Button>
               </CardFooter>
             </CardBody>

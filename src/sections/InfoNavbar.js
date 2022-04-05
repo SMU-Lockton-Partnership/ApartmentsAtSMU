@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from "headroom.js";
 // reactstrap components
@@ -65,74 +67,24 @@ function WhiteNavbar() {
           </div>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className="mr-2" color="default" caret nav>
-                  Components
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle color="default" caret nav>
+                  More Info
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/index" tag={Link}>
-                    All Components
+                  <DropdownItem to="/index#LearnMore" tag={Link}>
+                    <i className="nc-icon nc-alert-circle-i" />
+                    Learn More
                   </DropdownItem>
-                  <DropdownItem to="/presentation" tag={Link}>
-                    Presentation
+                  <DropdownItem to="/about-us" tag={Link}>
+                    <i className="nc-icon nc-app" />
+                    About Us
                   </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/paper-kit-pro-react/#/documentation/introduction?ref=pkpr-info-navbar"
-                    target="_blank"
-                  >
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className="mr-2" color="default" caret nav>
-                  Sections
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/sections#headers" tag={Link}>
-                    <i className="nc-icon nc-tile-56" />
-                    Headers
-                  </DropdownItem>
-                  <DropdownItem to="/sections#features" tag={Link}>
-                    <i className="nc-icon nc-settings" />
-                    Features
-                  </DropdownItem>
-                  <DropdownItem to="/sections#blogs" tag={Link}>
-                    <i className="nc-icon nc-bullet-list-67" />
-                    Blogs
-                  </DropdownItem>
-                  <DropdownItem to="/sections#teams" tag={Link}>
-                    <i className="nc-icon nc-single-02" />
-                    Teams
-                  </DropdownItem>
-                  <DropdownItem to="/sections#projects" tag={Link}>
-                    <i className="nc-icon nc-calendar-60" />
-                    Projects
-                  </DropdownItem>
-                  <DropdownItem to="/sections#pricing" tag={Link}>
-                    <i className="nc-icon nc-money-coins" />
-                    Pricing
-                  </DropdownItem>
-                  <DropdownItem to="/sections#testimonials" tag={Link}>
-                    <i className="nc-icon nc-badge" />
-                    Testimonials
-                  </DropdownItem>
-                  <DropdownItem to="/sections#contact-us" tag={Link}>
-                    <i className="nc-icon nc-mobile" />
+                  <DropdownItem to="/about-us#Contact" tag={Link}>
+                    <i className="nc-icon nc-circle-10" />
                     Contact Us
                   </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle color="default" caret nav>
-                  Examples
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-danger" right>
-                  <DropdownItem to="/about-us" tag={Link}>
-                    <i className="nc-icon nc-bank" />
-                    About-us
-                  </DropdownItem>
-                  <DropdownItem to="/add-product" tag={Link}>
+                  {/* <DropdownItem to="/add-product" tag={Link}>
                     <i className="nc-icon nc-basket" />
                     Add Product
                   </DropdownItem>
@@ -187,17 +139,69 @@ function WhiteNavbar() {
                   <DropdownItem to="/twitter-redesign" tag={Link}>
                     <i className="nc-icon nc-tie-bow" />
                     Twitter
+                  </DropdownItem>*/}
+                </DropdownMenu> 
+              </UncontrolledDropdown>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
+                  Possible Apartment Pages
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/product-page" tag={Link}>
+                    Possible Apartment Page Example 1
+                  </DropdownItem>
+                  <DropdownItem to="/profile-page" tag={Link}>
+                    Possible Apartment Page Example 2
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              {/* <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle className="mr-2" color="default" caret nav>
+                  Sections
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-danger" right>
+                  <DropdownItem to="/sections#headers" tag={Link}>
+                    <i className="nc-icon nc-tile-56" />
+                    Headers
+                  </DropdownItem>
+                  <DropdownItem to="/sections#features" tag={Link}>
+                    <i className="nc-icon nc-settings" />
+                    Features
+                  </DropdownItem>
+                  <DropdownItem to="/sections#blogs" tag={Link}>
+                    <i className="nc-icon nc-bullet-list-67" />
+                    Blogs
+                  </DropdownItem>
+                  <DropdownItem to="/sections#teams" tag={Link}>
+                    <i className="nc-icon nc-single-02" />
+                    Teams
+                  </DropdownItem>
+                  <DropdownItem to="/sections#projects" tag={Link}>
+                    <i className="nc-icon nc-calendar-60" />
+                    Projects
+                  </DropdownItem>
+                  <DropdownItem to="/sections#pricing" tag={Link}>
+                    <i className="nc-icon nc-money-coins" />
+                    Pricing
+                  </DropdownItem>
+                  <DropdownItem to="/sections#testimonials" tag={Link}>
+                    <i className="nc-icon nc-badge" />
+                    Testimonials
+                  </DropdownItem>
+                  <DropdownItem to="/sections#contact-us" tag={Link}>
+                    <i className="nc-icon nc-mobile" />
+                    Contact Us
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown> */}
               <NavItem>
                 <Button
                   className="btn-round"
-                  color="danger"
-                  href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkpr-info-navbar"
-                  target="_blank"
+                  color="success"
+                  to="/search"
+                  tag={Link}
                 >
-                  <i className="nc-icon nc-cart-simple" /> Buy Now
+                  <i className="nc-icon nc-zoom-split" /> Search
                 </Button>
               </NavItem>
             </Nav>

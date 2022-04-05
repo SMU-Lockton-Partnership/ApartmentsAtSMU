@@ -3,6 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row } from "reactstrap";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
 
@@ -15,30 +16,28 @@ function FooterGray() {
             <nav className="footer-nav">
               <ul>
                 <li>
-                  <a
-                    href="https://www.creative-tim.com?ref=pkpr-gray-footer"
-                    target="_blank"
+                  <Link
+                    to="/index"
                     className="mr-1"
                   >
-                    Creative Tim
-                  </a>
+                    Apartments@SMU
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="http://blog.creative-tim.com/?ref=pkpr-gray-footer"
-                    target="_blank"
+                  <Link
+                    to="/about-us"
                     className="mr-1"
                   >
-                    Blog
-                  </a>
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=pkpr-gray-footer"
-                    target="_blank"
+                  <Link
+                    to="/search"
+                    className="mr-1"
                   >
-                    Licenses
-                  </a>
+                    Search
+                  </Link>
                 </li>
               </ul>
             </nav>

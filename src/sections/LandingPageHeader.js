@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { Button, Container, Input, InputGroup } from "reactstrap";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
 
@@ -50,7 +51,7 @@ function LandingPageHeader() {
                   placeholder="ZIP Code"
                   type="number"
                 />
-                <Button color="info">
+                <Button to="/search" tag={Link} color="info">
                   Search
                 </Button>
               </InputGroup>
