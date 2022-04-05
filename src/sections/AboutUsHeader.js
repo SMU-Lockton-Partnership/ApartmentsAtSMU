@@ -13,7 +13,7 @@ function AboutUsHeader() {
         style={{
           backgroundImage:
             "url(" +
-            require("assets/img/sections/gerrit-vermeulen.jpg").default +
+            require("assets/img/sections/gerrit-vermeulen.jpg") +
             ")",
         }}
       >

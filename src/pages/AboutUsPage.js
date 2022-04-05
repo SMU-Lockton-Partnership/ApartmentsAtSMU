@@ -69,7 +69,6 @@ function AboutUs() {
                           alt="..."
                           src={
                             require("assets/img/faces/ayo-ogunseinde-2.jpg")
-                              .default
                           }
                         />
                         <CardTitle tag="h4">Jayson Werth</CardTitle>
@@ -111,7 +110,6 @@ function AboutUs() {
                           alt="..."
                           src={
                             require("assets/img/faces/joe-gardner-2.jpg")
-                              .default
                           }
                         />
                         <CardTitle tag="h4">Timothy Lee</CardTitle>
@@ -153,7 +151,6 @@ function AboutUs() {
                           alt="..."
                           src={
                             require("assets/img/faces/clem-onojeghuo-2.jpg")
-                              .default
                           }
                         />
                         <CardTitle tag="h4">Corey Clemons</CardTitle>
@@ -195,7 +192,6 @@ function AboutUs() {
                           alt="..."
                           src={
                             require("assets/img/faces/joe-gardner-2.jpg")
-                              .default
                           }
                         />
                         <CardTitle tag="h4">Alex Meech</CardTitle>
