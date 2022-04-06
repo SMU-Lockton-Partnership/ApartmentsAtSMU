@@ -36,13 +36,9 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title" id="LearnMore">Let's talk product</h2>
+                <h2 className="title" id="LearnMore">Let's talk apartments</h2>
                 <h5>
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  This is a one stop shop for SMU students who are looking for apartments near campus. We provide competitive, viable, and financially realistic apartments for those looking for housing. In addition, we offer pricing predictions using our proprietary technology to give you a future outlook into how prices may change. So whether you are looking for an affordable apartment now or in 6 months, we have got you covered.
                 </h5>
                 <br />
                 <Button
@@ -64,10 +60,9 @@ function LandingPage() {
                     <i className="nc-icon nc-palette" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Diverse selections</h4>
                     <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
+                      We offer a variety of apartments near campus so you can find your perfect fit
                     </p>
                     <Button
                       className="btn-link"
@@ -86,10 +81,9 @@ function LandingPage() {
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">All in one</h4>
                     <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                      From pricing points to utility information, we got you covered
                     </p>
                     <Button
                       className="btn-link"
@@ -108,10 +102,9 @@ function LandingPage() {
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Prediction</h4>
                     <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
+                      Using our AI technology, we provide a forecast of pricing of each apartments
                     </p>
                     <Button
                       className="btn-link"
@@ -130,10 +123,9 @@ function LandingPage() {
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
+                    <h4 className="info-title">Choose your style</h4>
                     <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
+                      Browse through our collection of detailed images and information to find your best fit
                     </p>
                     <Button
                       className="btn-link"
