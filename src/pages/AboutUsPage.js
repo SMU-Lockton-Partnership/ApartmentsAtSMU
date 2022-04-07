@@ -11,6 +11,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
 import InfoNavbar from "sections/InfoNavbar.js";
@@ -34,29 +35,19 @@ function AboutUs() {
       <div className="main">
         <div className="section">
           <Container>
-            <h3 className="title-uppercase">We build great products.</h3>
+            <h3 className="title-uppercase">We are a part of SMU's Senior Design Class.</h3>
+            <p>This course is broken down into two parts:</p>
             <p>
-              Collaboratively kill administrate empowered markets via plug-and-play
-              networks. Dynamically procrastinate B2C users after installed base
-              benefits. Dramatically visualize customer directed convergence
-              without revolutionary ROI.
+            The first part of this course focuses on software engineering life cycles and project management in-class instructions. This part will prepare students for the industry project engagements. We will review the project dashboards, timelines, risk management, schedule management, and meeting logistics. There will be an exam at the end of September. 
             </p>
             <p>
-              Efficiently unleash cross-media information without cross-media
-              value. Quickly maximize timely deliverables for real-time schemas.
-              Dramatically maintain clicks-and-mortar solutions without
-              functional solutions.
+            The second part of this course focuses on team projects working directly with industry partners to design, build, test, and deploy a computer science related project. The student project teams will work directly with the industry partner. Student project teams will meet periodically with professor on status, issues, risks, and team ways of working.
             </p>
             <h3 className="title-uppercase">
-              We
-              <i className="fa fa-heart heart mr-3 ml-1" />
-              what we do.
+              This is our <i class="fa-solid fa-3"></i>RD Project for the Class
             </h3>
             <p>
-              Completely synergize resource taxing relationships via premier
-              niche markets. Professionally cultivate one-to-one customer
-              service with robust ideas. Dynamically innovate resource-leveling
-              customer service for state of the art customer service.
+              Out first project was for Lockton, planning to create a Absenteeism Prediction Portal. The second was with TrenData to upgrade their system to handlde Big Data. Now this is our final project with Dr. Smith as our representative.
             </p>
             <h2 className="text-center creators" id="Contact">Creators</h2>
             <Row>
@@ -68,17 +59,15 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("assets/img/faces/ayo-ogunseinde-2.jpg")
+                            require("images/jayson.jpg")
                           }
                         />
                         <CardTitle tag="h4">Jayson Werth</CardTitle>
                       </a>
                     </div>
                     <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes orchestra
-                      to play it.
+                      Computer Science B.S. w/ Security Concentration, Cybersecurity M.S. <br />
+                      Skills: Full Stack Development, C++, HTML, CSS, JavaScript, React, SQL, MongoDB, Git, Python
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -88,15 +77,14 @@ function AboutUs() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fa fa-envelope" />
+                      <i className="fas fa-envelope" />
                     </Button>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/jayjayjetpain"
                     >
-                      <i className="fa fa-github" />
+                      <i className="fa-brands fa-github" />
                     </Button>
                   </CardFooter>
                 </Card>
@@ -109,17 +97,15 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("assets/img/faces/joe-gardner-2.jpg")
+                            require("images/tim.jpg")
                           }
                         />
                         <CardTitle tag="h4">Timothy Lee</CardTitle>
                       </a>
                     </div>
                     <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      Computer Science Major w/Machine Learning and AI specialization<br />
+                      Skills - C++, python, R, SQL, NoSQL systems, React, Node.js,  data mining, machine learning
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -129,15 +115,14 @@ function AboutUs() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fa fa-envelope" />
+                      <i className="fas fa-envelope" />
                     </Button>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/timlee0131"
                     >
-                      <i className="fa fa-github" />
+                      <i className="fa-brands fa-github" />
                     </Button>
                   </CardFooter>
                 </Card>
@@ -150,17 +135,16 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("assets/img/faces/clem-onojeghuo-2.jpg")
+                            require("images/corey.jpg")
                           }
                         />
                         <CardTitle tag="h4">Corey Clemons</CardTitle>
                       </a>
                     </div>
                     <p className="card-description text-center">
-                      Great teams do not hold back with one another. They are
-                      unafraid to air their laundry. They admit their
-                      mistakes, their weaknesses and concerns without fear
-                      of reprisal.
+                      Computer Science B.S. w/ Mathematics Minor <br />
+                      Skills: C++, Java, JavaScript, HTML, Python, SQL, React, Scientific 
+                      Computing
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -170,15 +154,14 @@ function AboutUs() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fa fa-envelope" />
+                      <i className="fas fa-envelope" />
                     </Button>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/CeeCeeLemons"
                     >
-                      <i className="fa fa-github" />
+                      <i className="fa-brands fa-github" />
                     </Button>
                   </CardFooter>
                 </Card>
@@ -191,17 +174,16 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("assets/img/faces/joe-gardner-2.jpg")
+                            require("images/alex.jpg")
                           }
                         />
                         <CardTitle tag="h4">Alex Meech</CardTitle>
                       </a>
                     </div>
                     <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
+                      Computer Science and Mathematics B.S, Computer Science M.S. <br />
+                      Skills: Engineering Management, C/C++, Java, HTML, CSS, SQL, Redis, MSSQL, C#, 
+                      Python, Machine Learning, NodeJS, React, Docker, AWS, Google Cloud
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -211,15 +193,14 @@ function AboutUs() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fa fa-envelope" />
+                      <i className="fas fa-envelope" />
                     </Button>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/alexjmeech"
                     >
-                      <i className="fa fa-github" />
+                      <i className="fa-brands fa-github" />
                     </Button>
                   </CardFooter>
                 </Card>
