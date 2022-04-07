@@ -11,6 +11,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
 import MultiDropdownNavbar from "sections/InfoNavbar";
@@ -30,7 +31,7 @@ function LandingPage() {
   return (
     <>
       <MultiDropdownNavbar />
-      <LandingPageHeader />
+      <LandingPageHeader id="search" />
       <div className="wrapper">
         <div className="section text-center landing-section">
           <Container>
@@ -40,19 +41,19 @@ function LandingPage() {
                 <h5>
                   This is a one stop shop for SMU students who are looking for apartments near campus. We provide competitive, viable, and financially realistic apartments for those looking for housing. In addition, we offer pricing predictions using our proprietary technology to give you a future outlook into how prices may change. So whether you are looking for an affordable apartment now or in 6 months, we have got you covered.
                 </h5>
-                <br />
-                <Button
+                {/* <br /> */}
+                {/* <Button
                   className="btn-fill btn-round"
                   color="danger"
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
                   See Details
-                </Button>
+                </Button> */}
               </Col>
             </Row>
             <br />
-            <br />
+            {/* <br /> */}
             <Row>
               <Col md="3">
                 <div className="info">
@@ -64,14 +65,14 @@ function LandingPage() {
                     <p className="description">
                       We offer a variety of apartments near campus so you can find your perfect fit
                     </p>
-                    <Button
+                    {/* <Button
                       className="btn-link"
                       color="danger"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
                       See more
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -85,14 +86,14 @@ function LandingPage() {
                     <p>
                       From pricing points to utility information, we got you covered
                     </p>
-                    <Button
+                    {/* <Button
                       className="btn-link"
                       color="danger"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
                       See more
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -106,14 +107,14 @@ function LandingPage() {
                     <p>
                       Using our AI technology, we provide a forecast of pricing of each apartments
                     </p>
-                    <Button
+                    {/* <Button
                       className="btn-link"
                       color="danger"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
                       See more
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </Col>
@@ -127,16 +128,24 @@ function LandingPage() {
                     <p>
                       Browse through our collection of detailed images and information to find your best fit
                     </p>
-                    <Button
+                    {/* <Button
                       className="btn-link"
                       color="danger"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
                       See more
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
+              </Col>
+            </Row>
+            <br />
+            <Row>
+              <Col className="ml-auto mr-auto" md="8">
+                <h3>Want to Start Searching? Click this button below to start searching with custom filters or use the <a className="stretched-link" color="info" href="/index#search" tag={Link}>search bar</a> above to get started by ZIP code!</h3>
+                <br />
+                <Button className="btn-fill btn-round" color="success" to="/search" tag={Link}>Search Now</Button>
               </Col>
             </Row>
           </Container>
