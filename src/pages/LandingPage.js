@@ -143,7 +143,7 @@ function LandingPage() {
             <br />
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h3>Want to Start Searching? Click this button below to start searching with custom filters or use the <a className="stretched-link" color="info" href="/index#search" tag={Link}>search bar</a> above to get started by ZIP code!</h3>
+                <h3>Want to Start Searching? Click this button below to start searching with custom filters or use the <Button className="btn-link m-0" color="info" to="/index#search" tag={Link}>search bar</Button> above to get started by ZIP code!</h3>
                 <br />
                 <Button className="btn-fill btn-round" color="success" to="/search" tag={Link}>Search Now</Button>
               </Col>
@@ -154,7 +154,7 @@ function LandingPage() {
           <Card data-color="blue">
             <CardBody className="text-center">
               <h6 className="card-category">
-                <i className="fa fa-graduation-cap mr-1" />
+                <i className="fas fa-graduation-cap mr-1" />
                 SMU Senior Design Team - Spring 2022
               </h6>
               <CardTitle tag="h5">
@@ -172,7 +172,7 @@ function LandingPage() {
                   color="default"
                   href="/about-us"
                 >
-                  <i className="fa fa-newspaper-o mr-1" />
+                  <i className="fas fa-newspaper mr-1" />
                   More About the Team
                 </Button>
               </CardFooter>
