@@ -10,8 +10,10 @@ import {
   Container,
   Row,
   Col,
+  UncontrolledPopover,
+  PopoverHeader,
+  PopoverBody
 } from "reactstrap";
-import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
 import InfoNavbar from "sections/InfoNavbar.js";
@@ -74,11 +76,21 @@ function AboutUs() {
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      id="tooltip65260554"
+                      type="button"
                     >
                       <i className="fas fa-envelope" />
                     </Button>
+                    <UncontrolledPopover
+                      trigger="focus"
+                      placement="bottom"
+                      target="tooltip65260554"
+                    >
+                      <PopoverHeader>SMU Email</PopoverHeader>
+                      <PopoverBody>
+                        jwerth@smu.edu
+                      </PopoverBody>
+                    </UncontrolledPopover>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
@@ -112,11 +124,21 @@ function AboutUs() {
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      id="tooltip65260555"
+                      type="button"
                     >
                       <i className="fas fa-envelope" />
                     </Button>
+                    <UncontrolledPopover
+                      trigger="focus"
+                      placement="bottom"
+                      target="tooltip65260555"
+                    >
+                      <PopoverHeader>SMU Email</PopoverHeader>
+                      <PopoverBody>
+                        hunjael@smu.edu
+                      </PopoverBody>
+                    </UncontrolledPopover>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
@@ -151,11 +173,21 @@ function AboutUs() {
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      id="tooltip65260556"
+                      type="button"
                     >
                       <i className="fas fa-envelope" />
                     </Button>
+                    <UncontrolledPopover
+                      trigger="focus"
+                      placement="bottom"
+                      target="tooltip65260556"
+                    >
+                      <PopoverHeader>SMU Email</PopoverHeader>
+                      <PopoverBody>
+                        cclemons@smu.edu
+                      </PopoverBody>
+                    </UncontrolledPopover>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"
@@ -190,11 +222,21 @@ function AboutUs() {
                     <Button
                       className="btn-just-icon mr-1"
                       color="linkedin"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      id="tooltip65260557"
+                      type="button"
                     >
                       <i className="fas fa-envelope" />
                     </Button>
+                    <UncontrolledPopover
+                      trigger="focus"
+                      placement="bottom"
+                      target="tooltip65260557"
+                    >
+                      <PopoverHeader>SMU Email</PopoverHeader>
+                      <PopoverBody>
+                        ameech@smu.edu
+                      </PopoverBody>
+                    </UncontrolledPopover>
                     <Button
                       className="btn-just-icon mr-1"
                       color="dribbble"

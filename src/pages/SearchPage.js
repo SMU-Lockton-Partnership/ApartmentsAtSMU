@@ -73,7 +73,7 @@ function SearchWithSidebar() {
                 <tbody>
                   <tr>
                     <td className="td-product">
-                      <a className="link" href="/profile-page" tag={Link}><strong>The Standard Apartments</strong></a>
+                      <a className="link" href="/apartment" tag={Link}><strong>The Standard Apartments</strong></a>
                       <p>
                         Studio, 1 Bed 1 Bath, 2 Bed 2 Bath
                       </p>
