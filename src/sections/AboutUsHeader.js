@@ -22,7 +22,7 @@ function AboutUsHeader() {
           <Container>
             <h1>
               Hello, <br />
-              We are Apartments@SMU.
+              We are SMU Apartment Locator.
             </h1>
             <h3>Let us tell you more about what we do.</h3>
           </Container>

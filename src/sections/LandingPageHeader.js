@@ -39,7 +39,7 @@ function LandingPageHeader() {
         <div className="content-center">
           <Container>
             <div className="motto">
-              <h1 className="title">Apartments@SMU</h1>
+              <h1 className="title">SMU Apartment Locator</h1>
               <h3 className="description">
                 Start searching for your dream apartment here.
               </h3>

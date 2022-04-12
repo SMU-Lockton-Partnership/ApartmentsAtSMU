@@ -27,6 +27,9 @@ function SearchWithSidebar() {
       document.body.classList.remove("search-page");
     };
   });
+
+  let apartments = JSON.parse(localStorage.getItem("apartments"))
+
   return (
     <>
       <DangerNavbar />
@@ -57,8 +60,9 @@ function SearchWithSidebar() {
                   </h6>
                 </Col>
               </Row>
+              {apartments.length > 0 && <>
               <h4 className="title">
-                <small>Example Table Results</small>
+                <small>Search Results</small>
               </h4>
               <Col className="ml-auto mr-auto" md="10">
               <Table className="table-shopping" responsive>
@@ -71,57 +75,25 @@ function SearchWithSidebar() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td className="td-product">
-                      <a className="link" href="/apartment" tag={Link}><strong>The Standard Apartments</strong></a>
-                      <p>
-                        Studio, 1 Bed 1 Bath, 2 Bed 2 Bath
-                      </p>
-                    </td>
-                    <td className="td-price">
-                      <small>5920 EAST UNIVERSITY BOULEVARD, DALLAS, TX 75206</small>
-                    </td>
-                    <td className="td-number td-quantity">
-                      $1,500 - $2,425
-                    </td>
-                    <td className="td-number">
-                      <i className="fas fa-arrow-trend-up"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="td-product">
-                      <strong>Jewel on Landmark</strong>
-                      <p>
-                        1 Bed 1 Bath or 2 Bed 2 Bath
-                      </p>
-                    </td>
-                    <td className="td-price">
-                      <small>14650 Landmark Blvd, Dallas, TX 75254</small>
-                    </td>
-                    <td className="td-number td-quantity">
-                      $1,580 - $2,964
-                    </td>
-                    <td className="td-number">
-                      <i className="fas fa-arrow-trend-down"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="td-product">
-                      <strong>Arrive on University</strong>
-                      <p>
-                        1 Bed 1 Bath or 2 Bed 2 Bath
-                      </p>
-                    </td>
-                    <td className="td-price">
-                      <small>5750 E University Blvd, Dallas, TX 75206</small>
-                    </td>
-                    <td className="td-number td-quantity">
-                      $1,640 - $3,175
-                    </td>
-                    <td className="td-number">
-                      <i className="fas fa-arrow-trend-up"></i>
-                    </td>
-                  </tr>
+                  {apartments.map((apartment, index) =>
+                      <tr>
+                      <td className="td-product">
+                        <a className="link" href={ "/apartment/" + index } tag={Link}><strong>{apartment["name"]}</strong></a>
+                        <p>
+                          {apartment["units"][0] === 0 ? "Studio, 1 Bed 1 Bath, 2 Bed 2 Bath" : "1 Bed 1 Bath or 2 Bed 2 Bath"}
+                        </p>
+                      </td>
+                      <td className="td-price">
+                        <small>{apartment["address"]}</small>
+                      </td>
+                      <td className="td-number td-quantity">
+                        ${apartment["price"][0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} - ${apartment["price"][1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                      </td>
+                      <td className="td-number">
+                        {apartment["trend"] ? <i className="fas fa-arrow-trend-up"></i> : <i className="fas fa-arrow-trend-down"></i>}
+                      </td>
+                    </tr>
+                  )}
                   <tr>
                     <td />
                     <td />
@@ -130,7 +102,8 @@ function SearchWithSidebar() {
                   </tr>
                 </tbody>
               </Table>
-            </Col>
+            </Col></>
+            }
             </Container>
           </div>
         </div>
