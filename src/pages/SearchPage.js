@@ -104,7 +104,12 @@ function SearchWithSidebar() {
   }
 
   function validateFilters() {
-    return !((zip !== null && zip.length > 4) || bedAmt !== null || priceRange !== null || priceTrend !== null)
+    if(zip !== null && zip !== "") {
+      return !(zip.length > 4 && (bedAmt !== null || priceRange !== null || priceTrend !== null))
+    }
+    else {
+      return !(bedAmt !== null || priceRange !== null || priceTrend !== null)
+    }
   }
 
   function search() {
