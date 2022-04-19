@@ -36,8 +36,8 @@ function SearchWithSidebar() {
   const [filterResults, setFilterResults] = React.useState(handleQuery())
   const [displayPage, setDisplayPage] = React.useState(1)
   const [displayResults, setDisplayResults] = React.useState(setupResults())
- 
-  const [zip, setZip] = React.useState(null);
+  
+  const [zip, setZip] = React.useState(window.location.href.includes("?") ? window.location.search.split("?")[1] : null);
   const [bedAmt, setBedAmt] = React.useState(null);
   const [priceRange, setPriceRange] = React.useState(null);
   const [priceTrend, setPriceTrend] = React.useState(null);
@@ -105,7 +105,7 @@ function SearchWithSidebar() {
 
   function validateFilters() {
     if(zip !== null && zip !== "") {
-      return !(zip.length > 4 && (bedAmt !== null || priceRange !== null || priceTrend !== null))
+      return !(zip.length > 4 || (bedAmt !== null || priceRange !== null || priceTrend !== null))
     }
     else {
       return !(bedAmt !== null || priceRange !== null || priceTrend !== null)
