@@ -19,9 +19,9 @@ import {
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, VerticalGridLines, LineSeries} from 'react-vis';
 
 // core components
-import InfoNavbar from "sections/InfoNavbar.js";
-import ProfilePageHeader from "sections/ProfilePageHeader.js";
-import FooterGray from "sections/FooterGray.js";
+import InfoNavbar from "../sections/InfoNavbar.js";
+import ProfilePageHeader from "../sections/ProfilePageHeader.js";
+import FooterGray from "../sections/FooterGray.js";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");

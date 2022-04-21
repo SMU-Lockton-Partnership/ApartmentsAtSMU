@@ -20,7 +20,7 @@ function FooterGray() {
                     to="/index"
                     className="mr-1"
                   >
-                    SMU Apartment Locator
+                    SMU Apartment Finder
                   </Link>
                 </li>
                 <li>

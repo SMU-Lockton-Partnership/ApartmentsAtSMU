@@ -55,10 +55,10 @@ function WhiteNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              SMU Apartment Locator
+              SMU Apartment Finder
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              SMU Apartment Locator
+              SMU Apartment Finder
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"

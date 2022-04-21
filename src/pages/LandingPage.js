@@ -14,9 +14,9 @@ import {
 import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
-import MultiDropdownNavbar from "sections/InfoNavbar";
-import LandingPageHeader from "sections/LandingPageHeader.js";
-import FooterWhite from "sections/FooterGray.js";
+import MultiDropdownNavbar from "../sections/InfoNavbar";
+import LandingPageHeader from "../sections/LandingPageHeader.js";
+import FooterWhite from "../sections/FooterGray.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");

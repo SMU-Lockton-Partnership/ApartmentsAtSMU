@@ -16,9 +16,9 @@ import {
 } from "reactstrap";
 
 // core components
-import InfoNavbar from "sections/InfoNavbar.js";
-import AboutUsHeader from "sections/AboutUsHeader.js";
-import FooterAboutUs from "sections/FooterGray.js";
+import InfoNavbar from "../sections/InfoNavbar.js";
+import AboutUsHeader from "../sections/AboutUsHeader.js";
+import FooterAboutUs from "../sections/FooterGray.js";
 
 function AboutUs() {
   document.documentElement.classList.remove("nav-open");
@@ -61,7 +61,7 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("images/jayson.jpg")
+                            require("../images/jayson.jpg")
                           }
                         />
                         <CardTitle tag="h4">Jayson Werth</CardTitle>
@@ -109,7 +109,7 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("images/tim.jpg")
+                            require("../images/tim.jpg")
                           }
                         />
                         <CardTitle tag="h4">Timothy Lee</CardTitle>
@@ -157,7 +157,7 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("images/corey.jpg")
+                            require("../images/corey.jpg")
                           }
                         />
                         <CardTitle tag="h4">Corey Clemons</CardTitle>
@@ -206,7 +206,7 @@ function AboutUs() {
                         <img
                           alt="..."
                           src={
-                            require("images/alex.jpg")
+                            require("../images/alex.jpg")
                           }
                         />
                         <CardTitle tag="h4">Alex Meech</CardTitle>

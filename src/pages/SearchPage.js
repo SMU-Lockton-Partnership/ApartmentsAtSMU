@@ -18,8 +18,8 @@ import Select from "react-select";
 import { HashLink as Link } from 'react-router-hash-link';
 
 // core components
-import DangerNavbar from "sections/InfoNavbar.js";
-import FooterWhite from "sections/FooterGray.js";
+import DangerNavbar from "../sections/InfoNavbar.js";
+import FooterWhite from "../sections/FooterGray.js";
 
 function SearchWithSidebar() {
   document.documentElement.classList.remove("nav-open");
