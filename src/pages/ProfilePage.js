@@ -49,7 +49,7 @@ function ProfilePage() {
   let apartment, costHistory, displayHist, costPredict
 
   if(index >= JSON.parse(localStorage.getItem("apartments")).length) {
-    history.push("")
+    history.push("/index")
   }
   else {
     apartment = JSON.parse(localStorage.getItem("apartments"))[index]

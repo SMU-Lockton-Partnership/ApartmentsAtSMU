@@ -256,7 +256,7 @@ function SearchWithSidebar() {
                   {displayResults.map((apartment, index) =>
                       <tr>
                       <td className="td-product">
-                        <a className="link" href={ "/apartment/" + index } tag={Link}><strong>{apartment["name"]}</strong></a>
+                        <a className="link" href={ "/apartment/" + apartment["id"] } tag={Link}><strong>{apartment["name"]}</strong></a>
                         <p>
                           {apartment["units"][0] === 0 ? "Studio, 1 Bed 1 Bath, 2 Bed 2 Bath" : "1 Bed 1 Bath or 2 Bed 2 Bath"}
                         </p>
